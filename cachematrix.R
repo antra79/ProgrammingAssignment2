@@ -19,12 +19,10 @@ m <- NULL
        getInverse = getInverse)
 }
 
-
 ### The function, cacheSolve, calculates the inverse of the matrix created by 
 #the above function, makeCacheMatrix. It first checks the value of the Inverse of 
 #the matrix: if the value is already been calculated, it gets the inverse of the matrix from the cache. In this case computation is  avoided. Otherwise, this function (cacheSolve) calculates the inverse of the 
 #matrix and sets teh value of inverse in the cache via the setmean function.
-
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
